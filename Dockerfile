@@ -1,4 +1,6 @@
 FROM openjdk
 
-ENTRYPOINT [ "gradlew", "bootRun" ]
+ADD . /app
+
+ENTRYPOINT [ "/app/gradlew", "bootRun" ]
 
